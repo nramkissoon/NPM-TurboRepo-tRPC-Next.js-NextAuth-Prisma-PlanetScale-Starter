@@ -1,6 +1,10 @@
-# Turborepo starter with NPM
+# Turborepo starter for NPM, tRPC, Next.js, NextAuth, Prisma, and PlanetScale
 
-This is an official starter turborepo.
+Inspired by [init.tips](https://init.tips/other). You can easily add Tailwind, Plausible, etc.
+
+The Prisma schema already contains models for NestAuth.js Users, Accounts, etc. See: [https://next-auth.js.org/adapters/prisma](https://next-auth.js.org/adapters/prisma)
+
+For deploying to Vercel and setting up the DB in PlanetScale, follow this article: [https://davidparks.dev/blog/planetscale-deployment-with-prisma/](https://davidparks.dev/blog/planetscale-deployment-with-prisma/). Keep in mind the prisma migration should run in the **db** package where the schema is.
 
 ## What's inside?
 
@@ -8,11 +12,10 @@ This turborepo uses [NPM](https://www.npmjs.com/) as a package manager. It inclu
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `web`: a [Next.js](https://nextjs.org) app with [tRPC](https://trpc.io/) and [NextAuth.js](https://next-auth.js.org/)
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `db`: contains [Prisma](https://www.prisma.io/) schema and generates Prisma client that can be imported by other packages in repo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
