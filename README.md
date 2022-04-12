@@ -1,5 +1,14 @@
 # Turborepo starter for NPM, tRPC, Next.js, NextAuth, Prisma, and PlanetScale
 
+After cloning run:
+
+```
+npm run install
+npm run build
+```
+
+This will install dependencies and build packages and generate Prisma Client.
+
 Inspired by [init.tips](https://init.tips/other). You can easily add Tailwind, Plausible, etc.
 
 The Prisma schema already contains models for NestAuth.js Users, Accounts, etc. See: [https://next-auth.js.org/adapters/prisma](https://next-auth.js.org/adapters/prisma)
