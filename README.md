@@ -5,7 +5,7 @@ Inspired by [init.tips](https://init.tips/other). You can easily add Tailwind, P
 After cloning run:
 
 ```
-npm run install
+npm install
 npm run build
 ```
 
