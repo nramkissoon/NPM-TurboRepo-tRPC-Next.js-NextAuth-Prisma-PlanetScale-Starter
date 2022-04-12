@@ -1,5 +1,7 @@
 # Turborepo starter for NPM, tRPC, Next.js, NextAuth, Prisma, and PlanetScale
 
+Inspired by [init.tips](https://init.tips/other). You can easily add Tailwind, Plausible, etc.
+
 After cloning run:
 
 ```
@@ -9,11 +11,11 @@ npm run build
 
 This will install dependencies and build packages and generate Prisma Client.
 
-Inspired by [init.tips](https://init.tips/other). You can easily add Tailwind, Plausible, etc.
-
 The Prisma schema already contains models for NestAuth.js Users, Accounts, etc. See: [https://next-auth.js.org/adapters/prisma](https://next-auth.js.org/adapters/prisma)
 
 For deploying to Vercel and setting up the DB in PlanetScale, follow this article: [https://davidparks.dev/blog/planetscale-deployment-with-prisma/](https://davidparks.dev/blog/planetscale-deployment-with-prisma/). Keep in mind the prisma migration should run in the **db** package where the schema is.
+
+**Remember to add DB URLs to environment.**
 
 ## What's inside?
 
